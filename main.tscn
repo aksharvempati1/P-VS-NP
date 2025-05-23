@@ -1,0 +1,2127 @@
+[gd_scene load_steps=11 format=4 uid="uid://bjwehplxek5nr"]
+
+[ext_resource type="PackedScene" uid="uid://bm8tjbmsrww1t" path="res://player.tscn" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dql5p7oxdf3p5" path="res://asset/Illustration7.png" id="2_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dtiea7ni8dkwo" path="res://asset/brick2.png" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://dm5oh522si35x" path="res://asset/Illustration6.png" id="3_7mycd"]
+[ext_resource type="PackedScene" uid="uid://b415lrish1lw6" path="res://sentinel.tscn" id="4_1bvp3"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h2yge"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
+texture = ExtResource("3_1bvp3")
+texture_region_size = Vector2i(500, 500)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+20:0/0 = 0
+21:0/0 = 0
+22:0/0 = 0
+23:0/0 = 0
+24:0/0 = 0
+25:0/0 = 0
+26:0/0 = 0
+27:0/0 = 0
+28:0/0 = 0
+29:0/0 = 0
+30:0/0 = 0
+31:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+21:1/0 = 0
+22:1/0 = 0
+23:1/0 = 0
+24:1/0 = 0
+25:1/0 = 0
+26:1/0 = 0
+27:1/0 = 0
+28:1/0 = 0
+29:1/0 = 0
+30:1/0 = 0
+31:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+24:2/0 = 0
+25:2/0 = 0
+26:2/0 = 0
+27:2/0 = 0
+28:2/0 = 0
+29:2/0 = 0
+30:2/0 = 0
+31:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+22:3/0 = 0
+23:3/0 = 0
+24:3/0 = 0
+25:3/0 = 0
+26:3/0 = 0
+27:3/0 = 0
+28:3/0 = 0
+29:3/0 = 0
+30:3/0 = 0
+31:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+22:4/0 = 0
+23:4/0 = 0
+24:4/0 = 0
+25:4/0 = 0
+26:4/0 = 0
+27:4/0 = 0
+28:4/0 = 0
+29:4/0 = 0
+30:4/0 = 0
+31:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+22:5/0 = 0
+23:5/0 = 0
+24:5/0 = 0
+25:5/0 = 0
+26:5/0 = 0
+27:5/0 = 0
+28:5/0 = 0
+29:5/0 = 0
+30:5/0 = 0
+31:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+21:6/0 = 0
+22:6/0 = 0
+23:6/0 = 0
+24:6/0 = 0
+25:6/0 = 0
+26:6/0 = 0
+27:6/0 = 0
+28:6/0 = 0
+29:6/0 = 0
+30:6/0 = 0
+31:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+22:7/0 = 0
+23:7/0 = 0
+24:7/0 = 0
+25:7/0 = 0
+26:7/0 = 0
+27:7/0 = 0
+28:7/0 = 0
+29:7/0 = 0
+30:7/0 = 0
+31:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+16:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+21:8/0 = 0
+22:8/0 = 0
+23:8/0 = 0
+24:8/0 = 0
+25:8/0 = 0
+26:8/0 = 0
+27:8/0 = 0
+28:8/0 = 0
+29:8/0 = 0
+30:8/0 = 0
+31:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+16:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+21:9/0 = 0
+22:9/0 = 0
+23:9/0 = 0
+24:9/0 = 0
+25:9/0 = 0
+26:9/0 = 0
+27:9/0 = 0
+28:9/0 = 0
+29:9/0 = 0
+30:9/0 = 0
+31:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+16:10/0 = 0
+17:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+21:10/0 = 0
+22:10/0 = 0
+23:10/0 = 0
+24:10/0 = 0
+25:10/0 = 0
+26:10/0 = 0
+27:10/0 = 0
+28:10/0 = 0
+29:10/0 = 0
+30:10/0 = 0
+31:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+14:11/0 = 0
+15:11/0 = 0
+16:11/0 = 0
+17:11/0 = 0
+18:11/0 = 0
+19:11/0 = 0
+20:11/0 = 0
+21:11/0 = 0
+22:11/0 = 0
+23:11/0 = 0
+24:11/0 = 0
+25:11/0 = 0
+26:11/0 = 0
+27:11/0 = 0
+28:11/0 = 0
+29:11/0 = 0
+30:11/0 = 0
+31:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+13:12/0 = 0
+14:12/0 = 0
+15:12/0 = 0
+16:12/0 = 0
+17:12/0 = 0
+18:12/0 = 0
+19:12/0 = 0
+20:12/0 = 0
+21:12/0 = 0
+22:12/0 = 0
+23:12/0 = 0
+24:12/0 = 0
+25:12/0 = 0
+26:12/0 = 0
+27:12/0 = 0
+28:12/0 = 0
+29:12/0 = 0
+30:12/0 = 0
+31:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+12:13/0 = 0
+13:13/0 = 0
+14:13/0 = 0
+15:13/0 = 0
+16:13/0 = 0
+17:13/0 = 0
+18:13/0 = 0
+19:13/0 = 0
+20:13/0 = 0
+21:13/0 = 0
+22:13/0 = 0
+23:13/0 = 0
+24:13/0 = 0
+25:13/0 = 0
+26:13/0 = 0
+27:13/0 = 0
+28:13/0 = 0
+29:13/0 = 0
+30:13/0 = 0
+31:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+15:14/0 = 0
+16:14/0 = 0
+17:14/0 = 0
+18:14/0 = 0
+19:14/0 = 0
+20:14/0 = 0
+21:14/0 = 0
+22:14/0 = 0
+23:14/0 = 0
+24:14/0 = 0
+25:14/0 = 0
+26:14/0 = 0
+27:14/0 = 0
+28:14/0 = 0
+29:14/0 = 0
+30:14/0 = 0
+31:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+13:15/0 = 0
+14:15/0 = 0
+15:15/0 = 0
+16:15/0 = 0
+17:15/0 = 0
+18:15/0 = 0
+19:15/0 = 0
+20:15/0 = 0
+21:15/0 = 0
+22:15/0 = 0
+23:15/0 = 0
+24:15/0 = 0
+25:15/0 = 0
+26:15/0 = 0
+27:15/0 = 0
+28:15/0 = 0
+29:15/0 = 0
+30:15/0 = 0
+31:15/0 = 0
+0:16/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+7:16/0 = 0
+8:16/0 = 0
+9:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+12:16/0 = 0
+13:16/0 = 0
+14:16/0 = 0
+15:16/0 = 0
+16:16/0 = 0
+17:16/0 = 0
+18:16/0 = 0
+19:16/0 = 0
+20:16/0 = 0
+21:16/0 = 0
+22:16/0 = 0
+23:16/0 = 0
+24:16/0 = 0
+25:16/0 = 0
+26:16/0 = 0
+27:16/0 = 0
+28:16/0 = 0
+29:16/0 = 0
+30:16/0 = 0
+31:16/0 = 0
+0:17/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+9:17/0 = 0
+10:17/0 = 0
+11:17/0 = 0
+12:17/0 = 0
+13:17/0 = 0
+14:17/0 = 0
+15:17/0 = 0
+16:17/0 = 0
+17:17/0 = 0
+18:17/0 = 0
+19:17/0 = 0
+20:17/0 = 0
+21:17/0 = 0
+22:17/0 = 0
+23:17/0 = 0
+24:17/0 = 0
+25:17/0 = 0
+26:17/0 = 0
+27:17/0 = 0
+28:17/0 = 0
+29:17/0 = 0
+30:17/0 = 0
+31:17/0 = 0
+0:18/0 = 0
+1:18/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+9:18/0 = 0
+10:18/0 = 0
+11:18/0 = 0
+12:18/0 = 0
+13:18/0 = 0
+14:18/0 = 0
+15:18/0 = 0
+16:18/0 = 0
+17:18/0 = 0
+18:18/0 = 0
+19:18/0 = 0
+20:18/0 = 0
+21:18/0 = 0
+22:18/0 = 0
+23:18/0 = 0
+24:18/0 = 0
+25:18/0 = 0
+26:18/0 = 0
+27:18/0 = 0
+28:18/0 = 0
+29:18/0 = 0
+30:18/0 = 0
+31:18/0 = 0
+0:19/0 = 0
+1:19/0 = 0
+2:19/0 = 0
+3:19/0 = 0
+4:19/0 = 0
+5:19/0 = 0
+6:19/0 = 0
+7:19/0 = 0
+8:19/0 = 0
+9:19/0 = 0
+10:19/0 = 0
+11:19/0 = 0
+12:19/0 = 0
+13:19/0 = 0
+14:19/0 = 0
+15:19/0 = 0
+16:19/0 = 0
+17:19/0 = 0
+18:19/0 = 0
+19:19/0 = 0
+20:19/0 = 0
+21:19/0 = 0
+22:19/0 = 0
+23:19/0 = 0
+24:19/0 = 0
+25:19/0 = 0
+26:19/0 = 0
+27:19/0 = 0
+28:19/0 = 0
+29:19/0 = 0
+30:19/0 = 0
+31:19/0 = 0
+0:20/0 = 0
+1:20/0 = 0
+2:20/0 = 0
+3:20/0 = 0
+4:20/0 = 0
+5:20/0 = 0
+6:20/0 = 0
+7:20/0 = 0
+8:20/0 = 0
+9:20/0 = 0
+10:20/0 = 0
+11:20/0 = 0
+12:20/0 = 0
+13:20/0 = 0
+14:20/0 = 0
+15:20/0 = 0
+16:20/0 = 0
+17:20/0 = 0
+18:20/0 = 0
+19:20/0 = 0
+20:20/0 = 0
+21:20/0 = 0
+22:20/0 = 0
+23:20/0 = 0
+24:20/0 = 0
+25:20/0 = 0
+26:20/0 = 0
+27:20/0 = 0
+28:20/0 = 0
+29:20/0 = 0
+30:20/0 = 0
+31:20/0 = 0
+0:21/0 = 0
+1:21/0 = 0
+2:21/0 = 0
+3:21/0 = 0
+4:21/0 = 0
+5:21/0 = 0
+6:21/0 = 0
+7:21/0 = 0
+8:21/0 = 0
+9:21/0 = 0
+10:21/0 = 0
+11:21/0 = 0
+12:21/0 = 0
+13:21/0 = 0
+14:21/0 = 0
+15:21/0 = 0
+16:21/0 = 0
+17:21/0 = 0
+18:21/0 = 0
+19:21/0 = 0
+20:21/0 = 0
+21:21/0 = 0
+22:21/0 = 0
+23:21/0 = 0
+24:21/0 = 0
+25:21/0 = 0
+26:21/0 = 0
+27:21/0 = 0
+28:21/0 = 0
+29:21/0 = 0
+30:21/0 = 0
+31:21/0 = 0
+0:22/0 = 0
+1:22/0 = 0
+2:22/0 = 0
+3:22/0 = 0
+4:22/0 = 0
+5:22/0 = 0
+6:22/0 = 0
+7:22/0 = 0
+8:22/0 = 0
+9:22/0 = 0
+10:22/0 = 0
+11:22/0 = 0
+12:22/0 = 0
+13:22/0 = 0
+14:22/0 = 0
+15:22/0 = 0
+16:22/0 = 0
+17:22/0 = 0
+18:22/0 = 0
+19:22/0 = 0
+20:22/0 = 0
+21:22/0 = 0
+22:22/0 = 0
+23:22/0 = 0
+24:22/0 = 0
+25:22/0 = 0
+26:22/0 = 0
+27:22/0 = 0
+28:22/0 = 0
+29:22/0 = 0
+30:22/0 = 0
+31:22/0 = 0
+0:23/0 = 0
+1:23/0 = 0
+2:23/0 = 0
+3:23/0 = 0
+4:23/0 = 0
+5:23/0 = 0
+6:23/0 = 0
+7:23/0 = 0
+8:23/0 = 0
+9:23/0 = 0
+10:23/0 = 0
+11:23/0 = 0
+12:23/0 = 0
+13:23/0 = 0
+14:23/0 = 0
+15:23/0 = 0
+16:23/0 = 0
+17:23/0 = 0
+18:23/0 = 0
+19:23/0 = 0
+20:23/0 = 0
+21:23/0 = 0
+22:23/0 = 0
+23:23/0 = 0
+24:23/0 = 0
+25:23/0 = 0
+26:23/0 = 0
+27:23/0 = 0
+28:23/0 = 0
+29:23/0 = 0
+30:23/0 = 0
+31:23/0 = 0
+0:24/0 = 0
+1:24/0 = 0
+2:24/0 = 0
+3:24/0 = 0
+4:24/0 = 0
+5:24/0 = 0
+6:24/0 = 0
+7:24/0 = 0
+8:24/0 = 0
+9:24/0 = 0
+10:24/0 = 0
+11:24/0 = 0
+12:24/0 = 0
+13:24/0 = 0
+14:24/0 = 0
+15:24/0 = 0
+16:24/0 = 0
+17:24/0 = 0
+18:24/0 = 0
+19:24/0 = 0
+20:24/0 = 0
+21:24/0 = 0
+22:24/0 = 0
+23:24/0 = 0
+24:24/0 = 0
+25:24/0 = 0
+26:24/0 = 0
+27:24/0 = 0
+28:24/0 = 0
+29:24/0 = 0
+30:24/0 = 0
+31:24/0 = 0
+0:25/0 = 0
+1:25/0 = 0
+2:25/0 = 0
+3:25/0 = 0
+4:25/0 = 0
+5:25/0 = 0
+6:25/0 = 0
+7:25/0 = 0
+8:25/0 = 0
+9:25/0 = 0
+10:25/0 = 0
+11:25/0 = 0
+12:25/0 = 0
+13:25/0 = 0
+14:25/0 = 0
+15:25/0 = 0
+16:25/0 = 0
+17:25/0 = 0
+18:25/0 = 0
+19:25/0 = 0
+20:25/0 = 0
+21:25/0 = 0
+22:25/0 = 0
+23:25/0 = 0
+24:25/0 = 0
+25:25/0 = 0
+26:25/0 = 0
+27:25/0 = 0
+28:25/0 = 0
+29:25/0 = 0
+30:25/0 = 0
+31:25/0 = 0
+0:26/0 = 0
+1:26/0 = 0
+2:26/0 = 0
+3:26/0 = 0
+4:26/0 = 0
+5:26/0 = 0
+6:26/0 = 0
+7:26/0 = 0
+8:26/0 = 0
+9:26/0 = 0
+10:26/0 = 0
+11:26/0 = 0
+12:26/0 = 0
+13:26/0 = 0
+14:26/0 = 0
+15:26/0 = 0
+16:26/0 = 0
+17:26/0 = 0
+18:26/0 = 0
+19:26/0 = 0
+20:26/0 = 0
+21:26/0 = 0
+22:26/0 = 0
+23:26/0 = 0
+24:26/0 = 0
+25:26/0 = 0
+26:26/0 = 0
+27:26/0 = 0
+28:26/0 = 0
+29:26/0 = 0
+30:26/0 = 0
+31:26/0 = 0
+0:27/0 = 0
+1:27/0 = 0
+2:27/0 = 0
+3:27/0 = 0
+4:27/0 = 0
+5:27/0 = 0
+6:27/0 = 0
+7:27/0 = 0
+8:27/0 = 0
+9:27/0 = 0
+10:27/0 = 0
+11:27/0 = 0
+12:27/0 = 0
+13:27/0 = 0
+14:27/0 = 0
+15:27/0 = 0
+16:27/0 = 0
+17:27/0 = 0
+18:27/0 = 0
+19:27/0 = 0
+20:27/0 = 0
+21:27/0 = 0
+22:27/0 = 0
+23:27/0 = 0
+24:27/0 = 0
+25:27/0 = 0
+26:27/0 = 0
+27:27/0 = 0
+28:27/0 = 0
+29:27/0 = 0
+30:27/0 = 0
+31:27/0 = 0
+0:28/0 = 0
+1:28/0 = 0
+2:28/0 = 0
+3:28/0 = 0
+4:28/0 = 0
+5:28/0 = 0
+6:28/0 = 0
+7:28/0 = 0
+8:28/0 = 0
+9:28/0 = 0
+10:28/0 = 0
+11:28/0 = 0
+12:28/0 = 0
+13:28/0 = 0
+14:28/0 = 0
+15:28/0 = 0
+16:28/0 = 0
+17:28/0 = 0
+18:28/0 = 0
+19:28/0 = 0
+20:28/0 = 0
+21:28/0 = 0
+22:28/0 = 0
+23:28/0 = 0
+24:28/0 = 0
+25:28/0 = 0
+26:28/0 = 0
+27:28/0 = 0
+28:28/0 = 0
+29:28/0 = 0
+30:28/0 = 0
+31:28/0 = 0
+0:29/0 = 0
+1:29/0 = 0
+2:29/0 = 0
+3:29/0 = 0
+4:29/0 = 0
+5:29/0 = 0
+6:29/0 = 0
+7:29/0 = 0
+8:29/0 = 0
+9:29/0 = 0
+10:29/0 = 0
+11:29/0 = 0
+12:29/0 = 0
+13:29/0 = 0
+14:29/0 = 0
+15:29/0 = 0
+16:29/0 = 0
+17:29/0 = 0
+18:29/0 = 0
+19:29/0 = 0
+20:29/0 = 0
+21:29/0 = 0
+22:29/0 = 0
+23:29/0 = 0
+24:29/0 = 0
+25:29/0 = 0
+26:29/0 = 0
+27:29/0 = 0
+28:29/0 = 0
+29:29/0 = 0
+30:29/0 = 0
+31:29/0 = 0
+0:30/0 = 0
+1:30/0 = 0
+2:30/0 = 0
+3:30/0 = 0
+4:30/0 = 0
+5:30/0 = 0
+6:30/0 = 0
+7:30/0 = 0
+8:30/0 = 0
+9:30/0 = 0
+10:30/0 = 0
+11:30/0 = 0
+12:30/0 = 0
+13:30/0 = 0
+14:30/0 = 0
+15:30/0 = 0
+16:30/0 = 0
+17:30/0 = 0
+18:30/0 = 0
+19:30/0 = 0
+20:30/0 = 0
+21:30/0 = 0
+22:30/0 = 0
+23:30/0 = 0
+24:30/0 = 0
+25:30/0 = 0
+26:30/0 = 0
+27:30/0 = 0
+28:30/0 = 0
+29:30/0 = 0
+30:30/0 = 0
+31:30/0 = 0
+0:31/0 = 0
+1:31/0 = 0
+2:31/0 = 0
+3:31/0 = 0
+4:31/0 = 0
+5:31/0 = 0
+6:31/0 = 0
+7:31/0 = 0
+8:31/0 = 0
+9:31/0 = 0
+10:31/0 = 0
+11:31/0 = 0
+12:31/0 = 0
+13:31/0 = 0
+14:31/0 = 0
+15:31/0 = 0
+16:31/0 = 0
+17:31/0 = 0
+18:31/0 = 0
+19:31/0 = 0
+20:31/0 = 0
+21:31/0 = 0
+22:31/0 = 0
+23:31/0 = 0
+24:31/0 = 0
+25:31/0 = 0
+26:31/0 = 0
+27:31/0 = 0
+28:31/0 = 0
+29:31/0 = 0
+30:31/0 = 0
+31:31/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
+texture = ExtResource("2_lquwl")
+texture_region_size = Vector2i(50, 50)
+0:0/size_in_atlas = Vector2i(3, 3)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5vw27"]
+texture = ExtResource("3_7mycd")
+texture_region_size = Vector2i(50, 50)
+0:0/size_in_atlas = Vector2i(3, 3)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0xm2m"]
+tile_size = Vector2i(50, 50)
+physics_layer_0/collision_layer = 1
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_h2yge")
+sources/0 = SubResource("TileSetAtlasSource_lquwl")
+sources/2 = SubResource("TileSetAtlasSource_272bh")
+sources/3 = SubResource("TileSetAtlasSource_5vw27")
+
+[node name="Main" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+scale = Vector2(0.1, 0.1)
+tile_map_data = PackedByteArray("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")
+tile_set = SubResource("TileSet_0xm2m")
+
+[node name="Background" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1061, -712)
+scale = Vector2(1.03266, 1.04601)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background"]
+show_behind_parent = true
+position = Vector2(123.951, 298.277)
+scale = Vector2(0.845577, 0.765195)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(3.86238e-05, -138.681)
+scale = Vector2(0.987763, 0.874018)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(137.211, -7.53704)
+scale = Vector2(0.873241, 0.965639)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D7/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(3.86238e-05, -138.681)
+scale = Vector2(0.987763, 0.874018)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D7/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-1772.23, -291.301)
+scale = Vector2(1.18429, 1.12783)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(134.532, 7.87531)
+scale = Vector2(1.18429, 1.12783)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(118.836, -158.818)
+scale = Vector2(1.18429, 1.12783)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(132.53, -1.16368)
+scale = Vector2(1.18429, 1.12783)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background"]
+show_behind_parent = true
+position = Vector2(-1159.14, 6.69213)
+scale = Vector2(0.593867, 0.640721)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(509.656, 157.761)
+scale = Vector2(1.27071, 1.16843)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(141.728, -137.573)
+scale = Vector2(0.995268, 0.917997)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(136.917, 3.89987)
+scale = Vector2(0.873241, 0.965639)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D7/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(-160.799, -147.799)
+scale = Vector2(1.11343, 1.04073)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(6.39413, -149.505)
+scale = Vector2(0.980082, 1.01067)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(-324.302, -184.249)
+scale = Vector2(1.27071, 1.16843)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-1.30933, -141.514)
+scale = Vector2(0.995268, 0.917997)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(154.165, 11.9028)
+scale = Vector2(1.06936, 1.13851)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(-3.8066, -139.311)
+scale = Vector2(0.961169, 0.865794)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(461.906, -310.101)
+scale = Vector2(1.07382, 1.06404)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(-117.442, 253.451)
+scale = Vector2(0.961169, 0.865794)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-236.07, 57.8249)
+scale = Vector2(0.787655, 0.873837)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-467.394, -221.662)
+scale = Vector2(0.961169, 0.865794)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(127.123, -11.1314)
+scale = Vector2(0.787655, 0.873837)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-137.89, -167.193)
+scale = Vector2(1.36533, 1.27554)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(100.292, 3.51625)
+scale = Vector2(1.09582, 1.04556)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-93.6165, -149.025)
+scale = Vector2(1.09582, 1.04556)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(94.6169, -1.14186)
+scale = Vector2(0.936574, 0.994775)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(144.31, 468.928)
+scale = Vector2(1.01253, 1.03308)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(185.019, 9.44163)
+scale = Vector2(0.656262, 0.943485)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(52.214, 44.7532)
+scale = Vector2(0.693756, 0.508545)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-57.8336, -358.685)
+scale = Vector2(1.21384, 1.64016)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(173.513, -74.9575)
+scale = Vector2(1.36118, 1.1678)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(107.154, -124.572)
+scale = Vector2(1.36118, 1.1678)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(30.5123, 354.092)
+scale = Vector2(0.779015, 0.797872)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(438.426, -48.013)
+scale = Vector2(0.898089, 0.926151)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-507.873, -256.405)
+scale = Vector2(0.85125, 0.940192)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-470.756, -106.085)
+scale = Vector2(1.04327, 1.07019)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8"]
+show_behind_parent = true
+position = Vector2(34.3266, 145.218)
+scale = Vector2(0.973831, 0.98114)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(96.4948, -104.087)
+scale = Vector2(1.00582, 0.910975)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(145.213, 14.3522)
+scale = Vector2(1.00582, 0.910975)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(39.6938, -28.9428)
+scale = Vector2(1.00582, 0.910975)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(145.609, -72.3679)
+scale = Vector2(1.00582, 0.910975)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(169.119, 162.755)
+scale = Vector2(1.42292, 1.32093)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-206.33, -189.219)
+scale = Vector2(0.545895, 0.877844)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(26.5569, -145.035)
+scale = Vector2(0.992883, 0.940202)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(140.588, 72.2069)
+scale = Vector2(1.254, 1.2599)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(101.58, 60.8942)
+scale = Vector2(1.254, 1.2599)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-175.146, -204.886)
+scale = Vector2(0.693934, 0.876263)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(147.6, 47.2747)
+scale = Vector2(0.990014, 0.876263)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(148.073, 55.4085)
+scale = Vector2(0.990014, 0.876263)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-3.28041, -129.794)
+scale = Vector2(0.990014, 0.876263)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-149.937, -77.8586)
+scale = Vector2(1.04928, 0.987479)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-149.448, -79.7834)
+scale = Vector2(1.0558, 1.01314)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-2.76616, -73.102)
+scale = Vector2(1.0558, 1.01314)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(150.146, 3.74698)
+scale = Vector2(1.0558, 1.01314)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(91.2297, 72.1189)
+scale = Vector2(0.65388, 1.01314)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(22.5695, -45.6303)
+scale = Vector2(0.65388, 1.01314)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-1838.16, 19.7059)
+scale = Vector2(3.54804, 1.94418)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(0.514982, -149.909)
+scale = Vector2(0.993134, 1.03585)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(0.0697193, -132.795)
+scale = Vector2(0.987197, 0.80766)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(130.891, 308.611)
+scale = Vector2(0.770227, 1.157)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-17.5207, -65.427)
+scale = Vector2(0.770227, 1.157)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(882.094, 460.67)
+scale = Vector2(1.23414, 0.708638)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(192.314, 0.414101)
+scale = Vector2(1.6063, 1.02561)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(105.681, 322.041)
+scale = Vector2(0.649745, 0.740495)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(147.395, -4.51684)
+scale = Vector2(0.978074, 0.964709)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-137.423, -143.527)
+scale = Vector2(0.978074, 0.964709)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(143.144, 1.65199)
+scale = Vector2(0.978074, 0.964709)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(34.0202, -145.015)
+scale = Vector2(0.85853, 0.988913)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-11.7043, -147.726)
+scale = Vector2(0.85853, 0.988913)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-356.039, 113.814)
+scale = Vector2(1.23948, 1.35827)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(127.98, -133.424)
+scale = Vector2(1.35023, 0.868009)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(117.955, -57.6109)
+scale = Vector2(0.61371, 0.766507)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(161.662, 126.505)
+scale = Vector2(1.22903, 1.24869)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(164.077, 1.52588e-05)
+scale = Vector2(1.22903, 1.24869)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-133.377, -129.12)
+scale = Vector2(0.778008, 0.929347)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-90.9223, -30.1641)
+scale = Vector2(0.521364, 0.579982)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(480.302, 37.8024)
+scale = Vector2(2.30015, 1.56551)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-146.138, -150.104)
+scale = Vector2(1.05547, 1.09692)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(152.375, -8.05511)
+scale = Vector2(1.05547, 1.09692)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(-151.797, -141.973)
+scale = Vector2(1.05547, 1.09692)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Background/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D8/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D8/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7/Sprite2D7"]
+show_behind_parent = true
+position = Vector2(152.871, -20.0839)
+scale = Vector2(1.05547, 1.09692)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+show_behind_parent = true
+position = Vector2(-602.328, 999.034)
+scale = Vector2(0.839257, 0.815798)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D"]
+show_behind_parent = true
+position = Vector2(146.538, 1.17188)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D"]
+show_behind_parent = true
+position = Vector2(275, 0.359341)
+scale = Vector2(1.07179, 0.957916)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(122.369, -0.375122)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D"]
+show_behind_parent = true
+position = Vector2(156.731, -150.813)
+scale = Vector2(1.11026, 1.06729)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(143.591, 1.8593)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(235.385, 7.34926)
+scale = Vector2(0.854604, 1.03943)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Background/Sprite2D"]
+show_behind_parent = true
+position = Vector2(271.154, -280.078)
+scale = Vector2(0.979487, 1.00479)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4"]
+show_behind_parent = true
+position = Vector2(146.538, 1.17188)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4"]
+show_behind_parent = true
+position = Vector2(281.545, -43.1526)
+scale = Vector2(1.07179, 1.03638)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(146.538, 1.17188)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4"]
+show_behind_parent = true
+position = Vector2(156.731, -150.813)
+scale = Vector2(1.11026, 1.06729)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(140.006, -6.21776)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D"]
+show_behind_parent = true
+position = Vector2(143.591, 1.8593)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D"]
+show_behind_parent = true
+position = Vector2(-134.107, -295.156)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(143.591, 1.8593)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-191.026, -116.303)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D2/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(143.591, 1.8593)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D"]
+show_behind_parent = true
+position = Vector2(142.974, -271.941)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-5.78867, -147.615)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-203.761, -168.863)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(38.6989, -148.2)
+scale = Vector2(1.03266, 1.04601)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D3/Sprite2D2/Sprite2D"]
+show_behind_parent = true
+position = Vector2(-4.68433, -151.415)
+scale = Vector2(1.03266, 1.04601)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D3/Sprite2D2/Sprite2D/Sprite2D"]
+show_behind_parent = true
+position = Vector2(154.064, 153.092)
+scale = Vector2(1.06067, 1.06067)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-147.54, -288.48)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D/Sprite2D3/Sprite2D2/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-144.011, -1.14437)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(280.061, -137.348)
+scale = Vector2(0.951739, 0.907368)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-143.813, 8.43016)
+scale = Vector2(0.951739, 0.907368)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-434.01, -5.125)
+scale = Vector2(1.11026, 1.06729)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(139.526, -1.02386)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(271.408, 1.02386)
+scale = Vector2(1.0971, 1.02795)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-340.592, 72.7091)
+scale = Vector2(0.951554, 0.991302)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(85.3723, -139.954)
+scale = Vector2(1.11026, 1.06729)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(139.156, 1.62443)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D"]
+show_behind_parent = true
+position = Vector2(139.526, -1.02386)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-294.666, 204.997)
+scale = Vector2(0.789561, 1.00002)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Background/Sprite2D"]
+show_behind_parent = true
+position = Vector2(-647.308, -841.406)
+scale = Vector2(0.866667, 0.853333)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5"]
+show_behind_parent = true
+position = Vector2(146.538, 1.17188)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5"]
+show_behind_parent = true
+position = Vector2(294.231, 1.3733)
+scale = Vector2(1.07179, 0.957916)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(238.53, 410.016)
+scale = Vector2(1.34114, 1.1469)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5"]
+show_behind_parent = true
+position = Vector2(-10.6509, -142.822)
+scale = Vector2(1.11026, 1.06729)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(137.036, 2.33966)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(273.406, -7.72025)
+scale = Vector2(0.994899, 1.08587)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5"]
+show_behind_parent = true
+position = Vector2(268.935, -280.151)
+scale = Vector2(0.979487, 1.00479)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4"]
+show_behind_parent = true
+position = Vector2(191.774, 122.491)
+scale = Vector2(1.10391, 1.32341)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4"]
+show_behind_parent = true
+position = Vector2(335.006, 119.888)
+scale = Vector2(1.2602, 1.32515)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(147.266, -1.77173)
+scale = Vector2(0.972943, 0.956828)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D2/Sprite2D"]
+show_behind_parent = true
+position = Vector2(69.457, 143.818)
+scale = Vector2(0.972943, 0.956828)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4"]
+show_behind_parent = true
+position = Vector2(982.733, -407.289)
+scale = Vector2(1.11026, 1.06729)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-1133.5, 366.516)
+scale = Vector2(0.957324, 0.988513)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D"]
+show_behind_parent = true
+position = Vector2(676.505, 303.136)
+scale = Vector2(0.990197, 1.16789)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-762.715, 355.999)
+scale = Vector2(0.90028, 1.15373)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-269.767, 8.96615)
+scale = Vector2(0.899737, 0.844709)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-694.156, 24.3309)
+scale = Vector2(1.11026, 1.06729)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-1.13128, 849.676)
+scale = Vector2(1.12557, 1.18216)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-48.3373, 793.73)
+scale = Vector2(0.996975, 1.24188)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-133.909, -136.597)
+scale = Vector2(0.956809, 0.824292)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-93.7283, 944.268)
+scale = Vector2(0.86952, 0.807888)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(354.692, -1044.12)
+scale = Vector2(1.22265, 1.04871)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D"]
+show_behind_parent = true
+position = Vector2(144.378, 4.05624)
+scale = Vector2(0.955784, 1.02296)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D/Sprite2D"]
+show_behind_parent = true
+position = Vector2(132.546, -55.5338)
+scale = Vector2(1.12901, 1.2129)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D/Sprite2D/Sprite2D"]
+show_behind_parent = true
+position = Vector2(119.561, 25.4007)
+scale = Vector2(0.597026, 0.684282)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D/Sprite2D/Sprite2D/Sprite2D"]
+show_behind_parent = true
+position = Vector2(-401.552, -143.388)
+scale = Vector2(1.09585, 1.18243)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D/Sprite2D/Sprite2D/Sprite2D/Sprite2D"]
+show_behind_parent = true
+position = Vector2(-401.552, -143.388)
+scale = Vector2(1.09585, 1.18243)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(673.39, -1534.16)
+scale = Vector2(0.805296, 0.979665)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-76.4858, -169.073)
+scale = Vector2(0.654152, 0.986985)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(556.991, -21.3029)
+scale = Vector2(1.33865, 1.91517)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D/Sprite2D5/Sprite2D4/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-197.588, -115.865)
+scale = Vector2(2.07454, 0.780781)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background"]
+show_behind_parent = true
+position = Vector2(-596.034, 872.124)
+scale = Vector2(0.923182, 0.895467)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(145.28, -139.057)
+scale = Vector2(0.977483, 0.954436)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-2.6224, -136.388)
+scale = Vector2(1.00699, 0.989324)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D2/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-181.25, -338.309)
+scale = Vector2(0.92, 0.926667)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D2/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(764.266, -6.98721)
+scale = Vector2(0.92, 0.926667)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D2/Sprite2D3/Sprite2D2/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-1230.74, -761.365)
+scale = Vector2(0.968689, 1.0079)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D2/Sprite2D3/Sprite2D2/Sprite2D2/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(349.424, -189.71)
+scale = Vector2(1.06643, 1.06004)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D2/Sprite2D3/Sprite2D2/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(358.134, -699.979)
+scale = Vector2(0.92, 0.926667)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D2/Sprite2D3/Sprite2D2/Sprite2D2/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(-1034.06, -82.7246)
+scale = Vector2(0.983582, 0.983333)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D2/Sprite2D3/Sprite2D2/Sprite2D2/Sprite2D3/Sprite2D2"]
+show_behind_parent = true
+position = Vector2(-195.65, -1062.46)
+scale = Vector2(1.06643, 1.06004)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background"]
+show_behind_parent = true
+position = Vector2(-530.668, 411.086)
+scale = Vector2(0.897358, 0.757679)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background/Sprite2D3"]
+show_behind_parent = true
+position = Vector2(155.576, -0.955181)
+scale = Vector2(1.14149, 1.03032)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Background"]
+show_behind_parent = true
+position = Vector2(-444.483, 196.939)
+scale = Vector2(0.927047, 0.945032)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D4"]
+show_behind_parent = true
+position = Vector2(154.598, -45.5229)
+scale = Vector2(1.07059, 1.04728)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Sprite2D4/Sprite2D"]
+show_behind_parent = true
+position = Vector2(-305.395, -96.5955)
+scale = Vector2(1.07059, 1.04728)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Background"]
+show_behind_parent = true
+position = Vector2(-449.325, 58.3168)
+scale = Vector2(1.03673, 1.00121)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Background"]
+show_behind_parent = true
+position = Vector2(-97.3215, 285.37)
+scale = Vector2(0.548745, 0.541741)
+texture = ExtResource("2_lquwl")
+
+[node name="Sentinel" type="Node2D" parent="."]
+
+[node name="Sentinel" parent="Sentinel" instance=ExtResource("4_1bvp3")]
+position = Vector2(217, -979)
+pitch = 0.9
+
+[node name="Sentinel2" parent="Sentinel" instance=ExtResource("4_1bvp3")]
+position = Vector2(448, -839)
+pitch = 0.9
+
+[node name="Sentinel3" parent="Sentinel" instance=ExtResource("4_1bvp3")]
+position = Vector2(1229, -784)
+pitch = 0.85
+
+[node name="Sentinel4" parent="Sentinel" instance=ExtResource("4_1bvp3")]
+position = Vector2(-59, -824)
+pitch = 1.3
+
+[node name="Sentinel5" parent="Sentinel" instance=ExtResource("4_1bvp3")]
+position = Vector2(935, -214)
+pitch = 1.6
+
+[node name="Sentinel6" parent="Sentinel" instance=ExtResource("4_1bvp3")]
+position = Vector2(264, -209)
+pitch = 0.8
+
+[node name="Sentinel7" parent="Sentinel" instance=ExtResource("4_1bvp3")]
+position = Vector2(544, 121)
+pitch = 0.9
+
+[node name="Sentinel8" parent="Sentinel" instance=ExtResource("4_1bvp3")]
+position = Vector2(312, -1609)
+pitch = 1.9
+
+[node name="Player" parent="." instance=ExtResource("1_h2yge")]
+position = Vector2(572, 345)
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+
+[node name="SpawnPoint" type="Marker2D" parent="SpawnPoints" groups=["SpawnPoint"]]
+position = Vector2(916, 0)
+
+[node name="SpawnPoint2" type="Marker2D" parent="SpawnPoints" groups=["SpawnPoint"]]
+position = Vector2(1301, -630)
+
+[node name="SpawnPoint3" type="Marker2D" parent="SpawnPoints" groups=["SpawnPoint"]]
+position = Vector2(966, -890)
+
+[node name="SpawnPoint4" type="Marker2D" parent="SpawnPoints" groups=["SpawnPoint"]]
+position = Vector2(-277, -1356)
+
+[node name="SpawnPoint5" type="Marker2D" parent="SpawnPoints" groups=["SpawnPoint"]]
+position = Vector2(223, -385)

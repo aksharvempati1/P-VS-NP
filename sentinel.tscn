@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://b415lrish1lw6"]
+
+[ext_resource type="Texture2D" uid="uid://ea7jwhogj7rf" path="res://asset/sentry.png" id="1_lf4fg"]
+[ext_resource type="Script" uid="uid://hk2acdeuqek6" path="res://sentinel.gd" id="1_mmh82"]
+[ext_resource type="Texture2D" uid="uid://def2ov1wuh2n2" path="res://asset/speech_bubble.png" id="3_hdmfk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmh82"]
+size = Vector2(49, 56)
+
+[node name="Sentry" type="Node2D" groups=["Sentinel"]]
+script = ExtResource("1_mmh82")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_lf4fg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.5, 0)
+shape = SubResource("RectangleShape2D_mmh82")
+
+[node name="SpeechBubble" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, -44)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_hdmfk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

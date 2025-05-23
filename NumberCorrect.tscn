@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkmj2477elcy3"]
+
+[ext_resource type="Script" uid="uid://c8gpi34y0snp7" path="res://number_correct.gd" id="1_fwcyg"]
+[ext_resource type="FontFile" uid="uid://diwjh0p6vn46u" path="res://Fonts/Super Peace.ttf" id="1_hf5aa"]
+
+[sub_resource type="Theme" id="Theme_fwcyg"]
+default_font = ExtResource("1_hf5aa")
+default_font_size = 40
+
+[sub_resource type="Theme" id="Theme_kb3kg"]
+default_font = ExtResource("1_hf5aa")
+default_font_size = 40
+
+[node name="NumberCorrect" type="Control" groups=["NumberUI"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_fwcyg")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.03
+anchor_top = 0.05
+anchor_right = 0.2
+anchor_bottom = 0.11
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_fwcyg")
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.005
+anchor_top = 0.02
+anchor_right = 0.995
+anchor_bottom = 0.96
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_kb3kg")
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect2/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.05
+anchor_right = 0.99
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "0/5
+"
+horizontal_alignment = 1
+vertical_alignment = 1

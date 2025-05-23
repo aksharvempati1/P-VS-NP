@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://qcg818nu4n74"]
+
+[ext_resource type="Script" uid="uid://cjh86gr8n1b0w" path="res://dialogue.gd" id="1_4xg4g"]
+[ext_resource type="FontFile" uid="uid://diwjh0p6vn46u" path="res://Fonts/Super Peace.ttf" id="1_tgtc2"]
+[ext_resource type="AudioStream" uid="uid://ccw432ch7afvf" path="res://audio/meow/meow1.wav" id="3_qtnsr"]
+
+[sub_resource type="Theme" id="Theme_4xg4g"]
+default_font = ExtResource("1_tgtc2")
+default_font_size = 40
+
+[node name="Dialogue" type="Control" groups=["Dialogue"]]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4xg4g")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.087
+anchor_top = 0.665
+anchor_right = 0.914
+anchor_bottom = 0.945
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_4xg4g")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09
+anchor_top = 0.67
+anchor_right = 0.91
+anchor_bottom = 0.94
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_4xg4g")
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.05
+anchor_right = 0.99
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+
+[node name="Choices" type="Control" parent="ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Choice1" type="Button" parent="ColorRect/Choices"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 1.0
+anchor_right = 0.3
+anchor_bottom = 1.0
+offset_top = -38.0
+offset_right = 70.0
+grow_vertical = 0
+text = "True"
+
+[node name="Choice2" type="Button" parent="ColorRect/Choices"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7
+anchor_top = 1.0
+anchor_right = 0.8
+anchor_bottom = 1.0
+offset_top = -38.0
+offset_right = 70.0
+grow_vertical = 0
+text = "False"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qtnsr")
+
+[connection signal="pressed" from="ColorRect/Choices/Choice1" to="." method="_on_choice_1_pressed"]
+[connection signal="pressed" from="ColorRect/Choices/Choice2" to="." method="_on_choice_2_pressed"]

@@ -1,0 +1,263 @@
+[gd_scene load_steps=26 format=3 uid="uid://bm8tjbmsrww1t"]
+
+[ext_resource type="Script" uid="uid://c33kqvrvf0ilj" path="res://character_body_2d.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://d3wcxfsth6nrt" path="res://asset/Illustration3.png" id="2_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://qcg818nu4n74" path="res://Dialogue.tscn" id="3_i3pqv"]
+[ext_resource type="PackedScene" uid="uid://dkmj2477elcy3" path="res://NumberCorrect.tscn" id="4_hqtel"]
+[ext_resource type="PackedScene" uid="uid://ecgniq1vmldl" path="res://end_screen.tscn" id="5_606se"]
+[ext_resource type="Texture2D" uid="uid://7xxpie4jamo6" path="res://asset/WalkAnimation/WalkFrame1.png" id="5_n7ghd"]
+[ext_resource type="Texture2D" uid="uid://c6uj4mg4d65i3" path="res://asset/WalkAnimation/WalkFrame2.png" id="6_nvl01"]
+[ext_resource type="Texture2D" uid="uid://di63fnkpltlrw" path="res://asset/WalkAnimation/WalkFrame3.png" id="7_ivps1"]
+[ext_resource type="Texture2D" uid="uid://bemphfv1au2qc" path="res://asset/WalkAnimation/WalkFrame4.png" id="8_urp6f"]
+[ext_resource type="Texture2D" uid="uid://ct56dgehuqn55" path="res://asset/WalkAnimation/WalkFrame5.png" id="9_bwjto"]
+[ext_resource type="Texture2D" uid="uid://db4rx0w0iqiki" path="res://asset/WalkAnimation/WalkFrame6.png" id="10_606se"]
+[ext_resource type="Texture2D" uid="uid://cfcfnu4fx4tsw" path="res://asset/WalkAnimation/WalkFrame7.png" id="11_ivps1"]
+[ext_resource type="Texture2D" uid="uid://cg34rx2kdcdeq" path="res://asset/WalkAnimation/WalkFrame8.png" id="12_urp6f"]
+[ext_resource type="Texture2D" uid="uid://bhrveu7bww2le" path="res://asset/portal.png" id="13_urp6f"]
+[ext_resource type="AudioStream" uid="uid://0kof2crb3irw" path="res://audio/catjump.ogg" id="14_bwjto"]
+[ext_resource type="AudioStream" uid="uid://bxd8keqkmhxur" path="res://audio/portalclose.ogg" id="16_op7ga"]
+[ext_resource type="AudioStream" uid="uid://beiqm8056gqjv" path="res://audio/portalopen.ogg" id="17_q13i1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(89, 99)
+
+[sub_resource type="Animation" id="Animation_sweqy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_i3pqv")]
+}
+
+[sub_resource type="Animation" id="Animation_hqtel"]
+resource_name = "Walk"
+length = 0.5336
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_n7ghd"), ExtResource("6_nvl01"), ExtResource("7_ivps1"), ExtResource("8_urp6f"), ExtResource("9_bwjto"), ExtResource("10_606se"), ExtResource("11_ivps1"), ExtResource("12_urp6f")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2hs0m"]
+_data = {
+&"RESET": SubResource("Animation_sweqy"),
+&"Walk": SubResource("Animation_hqtel")
+}
+
+[sub_resource type="Animation" id="Animation_bwjto"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PortalSprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PortalSprite:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_606se"]
+resource_name = "portalclose"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PortalSprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(0.25, 0.25), Vector2(1e-05, 1e-05)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PortalSprite:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.202326, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.5708, 3.14159, 4.71239]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PortalCloseAudio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_urp6f"]
+resource_name = "portal"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PortalSprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(0.25, 0.25), Vector2(1e-05, 1e-05)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PortalSprite:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.202326, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.5708, 3.14159, 4.71239]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PortalOpenAudio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.0333333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_606se"]
+_data = {
+&"RESET": SubResource("Animation_bwjto"),
+&"portalclose": SubResource("Animation_606se"),
+&"portalopen": SubResource("Animation_urp6f")
+}
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_i3pqv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Dialogue" parent="CanvasLayer" instance=ExtResource("3_i3pqv")]
+
+[node name="NumberCorrect" parent="CanvasLayer" instance=ExtResource("4_hqtel")]
+metadata/_edit_use_anchors_ = true
+
+[node name="EndScreen" parent="CanvasLayer" instance=ExtResource("5_606se")]
+
+[node name="WalkAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_2hs0m")
+}
+
+[node name="TeleportAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_606se")
+}
+
+[node name="PortalSprite" type="Sprite2D" parent="."]
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("13_urp6f")
+
+[node name="JumpAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_bwjto")
+volume_db = -10.0
+
+[node name="PortalCloseAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_op7ga")
+volume_db = -5.0
+
+[node name="PortalOpenAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_q13i1")
+volume_db = -5.0
